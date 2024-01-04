@@ -5,7 +5,10 @@ import Banner from "../../Image/banner.jpeg";
 
 const MyCarousel = () => {
   return (
-    <Carousel style={{ maxWidth: "100%", maxHeight: "400px", margin: "auto" }}>
+    <Carousel
+      style={{ maxWidth: "100%", maxHeight: "400px", margin: "auto" }}
+      interval={2000}
+    >
       <Carousel.Item>
         <img
           className="d-block w-100"

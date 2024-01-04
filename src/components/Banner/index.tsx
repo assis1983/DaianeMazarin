@@ -1,13 +1,13 @@
-import { StyledImage } from "./style";
+import { BannerDiv, StyledImage } from "./style";
 import Perfil from "../../Image/perfil.png";
 
 const MyBanner = () => {
   return (
-    <div>
+    <BannerDiv>
       <StyledImage 
         src= { Perfil }
       />
-    </div>
+    </BannerDiv>
   );
 };
 

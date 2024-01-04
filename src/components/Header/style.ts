@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
-  background-color: #939; 
+  background-color: #8B008B; 
   color: #fff; 
   padding: 15px 0;
   text-align: center;
-  height: 3.5rem;
+  height: 4rem;
 `;
 
 export const Nav = styled.nav`
@@ -18,7 +18,7 @@ export const NavLink = styled.a`
   color: #fff;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   font-family: 'Dosis';
   border-right: 1px solid #ccc; 
