@@ -19,7 +19,10 @@ export const NavLink = styled.a`
   text-decoration: none;
   margin: 0 15px;
   font-size: 1rem;
+  font-weight: bold;
   font-family: 'Dosis';
+  border-right: 1px solid #ccc; 
+  padding-right: 25px;  
   transition: color 0.3s ease;
 
   &:hover {
