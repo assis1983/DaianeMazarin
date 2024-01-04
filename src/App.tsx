@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import MyCarousel from "./components/Carousel";
 import MyBanner from "./components/Banner";
 import WhatsAppButton from "./components/ButtonWhatss";
+import MyFooter from "./components/Footer";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <MyCarousel />
       <MyBanner />
       <WhatsAppButton />
+      <MyFooter />
     </div>
-  );
+  );  
 }
 
 export default App;

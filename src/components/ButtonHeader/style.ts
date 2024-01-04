@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledDivButton = styled.div`
-  margin-left: 80px;
+  margin-left: 50px;
 `;
 
 export const StyledButtonMenu = styled.button`
