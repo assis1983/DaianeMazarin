@@ -6,9 +6,42 @@ export const Baseboard = styled.div`
   height: 15rem;
   background-color: #e6e6fa;
 
-  .TitleSobre,
-  .TitleNav,
+  .TitleSobre {
+    display: flex;
+    flex-direction: column;
+    color: #8b008b;
+    margin: 0;
+    padding: 0;
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+
   .TitleInfo {
+    display: flex;
+    flex-direction: column;
+    color: #8b008b;
+    margin: 0;
+    padding: 0;
+    h1 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  .TitleNav {
     display: flex;
     flex-direction: column;
     color: #8b008b;
@@ -41,8 +74,6 @@ export const Baseboard = styled.div`
       color: inherit;
       margin-right: 20px;
     }
-    p {
-    }
   }
 
   .address {
@@ -51,6 +82,7 @@ export const Baseboard = styled.div`
 `;
 
 export const Copyright = styled.div`
+  height: 80px;
   text-align: center;
   background-color: #e6e6fa;
   color: #8b008b;

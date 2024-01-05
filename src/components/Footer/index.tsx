@@ -16,8 +16,7 @@ const MyFooter = () => {
           <h1>Sobre Nós</h1>
           <p>
             A Clínica Daiane Mazarin fundada em 2013, <br />
-            oferece soluções de estética e nutrição unindo
-            <br />
+            oferece soluções de estética e <br/>nutrição unindo
             tecnologia e qualidade para atender às <br />
             necessidades de cada paciente, com <br />
             equipe altamente capacitada e <br />

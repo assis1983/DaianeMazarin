@@ -4,6 +4,7 @@ import MyCarousel from "./components/Carousel";
 import MyBanner from "./components/Banner";
 import WhatsAppButton from "./components/ButtonWhatss";
 import MyFooter from "./components/Footer";
+import Treatments from "./components/Treatments";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <MyCarousel />
       <MyBanner />
+      <Treatments />
       <WhatsAppButton />
       <MyFooter />
     </div>
