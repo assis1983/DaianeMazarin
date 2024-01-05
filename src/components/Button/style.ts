@@ -1,15 +1,11 @@
 import styled from "styled-components";
 
-export const StyledDivButton = styled.div`
-  margin-left: 50px;
-`;
-
-export const StyledButtonMenu = styled.button`
+export const StyleButton = styled.button`
   width: 200px;
-  height: 30px;
+  height: 50px;
   border-radius: 10px;
   border: none;
-  color: #8B008B;
+  color: #8b008b;
   background-color: #e6e6fa;
   transition: transform 0.3s ease;
   &:hover,

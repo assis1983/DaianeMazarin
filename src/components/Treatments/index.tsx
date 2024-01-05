@@ -8,6 +8,7 @@ import {
 import Body from "../../Image/service-01.jpg";
 import Face from "../../Image/service-02.jpg";
 import Nutrition from "../../Image/service-03.jpg";
+import Button from "../Button";
 
 const Treatments = () => {
   return (
@@ -30,6 +31,7 @@ const Treatments = () => {
               a autoconfiança.
             </p>
           </div>
+          <Button />
         </StyleDivImages>
         <StyleDivImages>
           <Images src={Face} />
@@ -43,6 +45,7 @@ const Treatments = () => {
               luminosidade natural, promovendo uma pele saudável e radiante.
             </p>
           </div>
+          <Button />
         </StyleDivImages>
         <StyleDivImages>
           <Images src={Nutrition} />
@@ -53,10 +56,11 @@ const Treatments = () => {
             <p>
               Descubra o caminho para uma jornada de emagrecimento saudável em
               nossa clínica especializada. Com abordagem personalizada,
-              oferecemos programas eficazes que visam não apenas a perda de
-              peso, mas também o bem-estar geral. 
+              oferecemos programas eficazes que visam a perda de peso e o
+              bem-estar geral.
             </p>
           </div>
+          <Button />
         </StyleDivImages>
       </ContainerImages>
     </>

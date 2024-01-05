@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const WhatsAppButtonWrapper = styled.div`
   position: fixed;
@@ -7,7 +7,7 @@ export const WhatsAppButtonWrapper = styled.div`
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-
+  
   img {
     width: 80px; 
   }

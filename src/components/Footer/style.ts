@@ -22,6 +22,8 @@ export const Baseboard = styled.div`
     }
     p {
       font-size: 1rem;
+      text-align: justify;
+      max-width: 320px;
     }
   }
 
