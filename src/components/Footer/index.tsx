@@ -1,4 +1,4 @@
-import { Baseboard } from "./style";
+import { Baseboard, Copyright } from "./style";
 import IconFace from "../../assets/facebook";
 import IconInstagram from "../../assets/instagram";
 import IconWhats from "../../assets/whats";
@@ -14,15 +14,30 @@ const MyFooter = () => {
       <Baseboard>
         <div className="TitleSobre">
           <h1>Sobre Nós</h1>
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            className="LinkGit"
-          />
+          <p>
+            A Clínica Daiane Mazarin fundada em 2013, <br />
+            oferece soluções de estética e nutrição unindo
+            <br />
+            tecnologia e qualidade para atender às <br />
+            necessidades de cada paciente, com <br />
+            equipe altamente capacitada e <br />
+            equipamentos de última geração.
+          </p>
         </div>
         <div className="TitleNav">
           <h1>Navegue</h1>
+          <a href="#">
+            <p>Inicio</p>
+          </a>
+          <a href="">
+            <p>Quem Somos</p>
+          </a>
+          <a href="">
+            <p>Serviços</p>
+          </a>
+          <a href="">
+            <p>Contatos</p>
+          </a>
           <a
             href=""
             target="_blank"
@@ -39,9 +54,14 @@ const MyFooter = () => {
           <a href={linkInstagram} target="_blank">
             <IconInstagram />
           </a>
-          <a href= { linkWhats } target="_blank">
+          <a href={linkWhats} target="_blank">
             <IconWhats />
           </a>
+          <div className="address">
+            <p>Alameda Navarro de Andrade, 831</p>
+            <p>Centro - Adamantina/SP</p>
+            <p>CEP: 17800-000</p>
+          </div>
         </div>
         <div className="TitleInfo">
           <h1>
@@ -49,15 +69,13 @@ const MyFooter = () => {
             <br />
             Funcionamento
           </h1>
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            className="LinkGit"
-          />
+          <p>Seg - Sex: 08h - 20H</p>
+          <p>Sábado: 08h - 12h</p>
         </div>
       </Baseboard>
-      <p>&copy; {new Date().getFullYear()} Daiane Mazarin Estética Avançada</p>
+      <Copyright>
+        &copy; {new Date().getFullYear()} Daiane Mazarin Estética Avançada
+      </Copyright>
     </>
   );
 };
