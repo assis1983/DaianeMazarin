@@ -1,18 +1,17 @@
 import { HeaderContainer, Nav, NavLink } from "./style";
 import ButtonMenu from "../ButtonHeader";
 
-
 const Header = () => {
   return (
     <HeaderContainer>
       <Nav>
-        <NavLink href="#sobre">SOBRE</NavLink>
-        <NavLink href="#servicos">TRATAMENTOS</NavLink>
-        <NavLink href="#depoimentos">DEPOIMENTOS</NavLink>
-        <NavLink href="#agendamento">AGENDAMENTO</NavLink>
-        <NavLink href="#promocoes">PROMOÇÕES</NavLink>
-        <NavLink href="#galeria">GALERIA</NavLink>
-        <NavLink href="#contato">FALE CONOSCO</NavLink>
+        <NavLink to={"/about"}>SOBRE</NavLink>
+        <NavLink to={""}>TRATAMENTOS</NavLink>
+        <NavLink to={""}>DEPOIMENTOS</NavLink>
+        <NavLink to={""}>AGENDAMENTO</NavLink>
+        <NavLink to={""}>PROMOÇÕES</NavLink>
+        <NavLink to={""}>GALERIA</NavLink>
+        <NavLink to={""}>FALE CONOSCO</NavLink>
         <ButtonMenu />
       </Nav>
     </HeaderContainer>

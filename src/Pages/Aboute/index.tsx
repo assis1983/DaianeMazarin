@@ -1,12 +1,14 @@
-
-
+import Header from "../../components/Header";
+import { StyledAre, TextAre } from "./style";
 const About = () => {
-    return (
-        <>
-            <div id="sobre">Eder</div>
-        </>
-    )
-}
+  return (
+    <>
+      <Header />
+      <StyledAre>
+        <TextAre>Quem Somos</TextAre>
+      </StyledAre>
+    </>
+  );
+};
 
-
-export default About
+export default About;
