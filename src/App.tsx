@@ -17,7 +17,7 @@ function App() {
       <WhatsAppButton />
       <MyFooter />
     </div>
-  );  
+  );
 }
 
 export default App;
