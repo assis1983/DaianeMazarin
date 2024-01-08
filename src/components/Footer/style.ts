@@ -84,7 +84,7 @@ export const Baseboard = styled.div`
 `;
 
 export const Copyright = styled.div`
-  height: 80px;
+  height: 60px;
   text-align: center;
   background-color: #e6e6fa;
   color: #8b008b;

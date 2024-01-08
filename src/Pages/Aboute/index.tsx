@@ -12,6 +12,7 @@ import Sala from "../../Image/sala.jpg"
 import Recep from "../../Image/recep.jpg"
 import Equipamento from "../../Image/aparelho.jpg"
 import Button from "../../components/Button";
+import MyFooter from "../../components/Footer";
 
 const About = () => {
   return (
@@ -49,6 +50,7 @@ const About = () => {
           <img src={Equipamento} />
         </Images>
       </Container>
+      <MyFooter />
     </>
   );
 };
