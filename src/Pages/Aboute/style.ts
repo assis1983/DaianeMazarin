@@ -34,8 +34,46 @@ export const StyleDesck = styled.img`
   width: 50%;
 `;
 
-export const Images = styled.div `
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5rem;
-`
+export const Images = styled.div`
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  cursor: pointer;
+`;
+
+export const Highlight = styled.img`
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+export const EnlargedImage = styled.img`
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+`;
+
+export const Information = styled.div`
+  display: flex;
+  justify-content: space-around;
+  height: 550px;
+  background-color: #e6e6fa;
+  margin-bottom: 20px;
+  .check {
+    margin-top: 3%;
+    width: 30%;
+    height: 80%;
+    background-color: #8B008B;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease-in-out;
+
+    &:hover {
+      border: 5px solid #00bcd4; 
+    }
+  }
+`;

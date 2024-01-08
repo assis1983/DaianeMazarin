@@ -6,15 +6,31 @@ import {
   StyleDesck,
   Container,
   Images,
+  EnlargedImage,
+  Highlight,
+  Information,
 } from "./style";
 import Desck from "../../Image/dm-27.jpg";
-import Sala from "../../Image/sala.jpg"
-import Recep from "../../Image/recep.jpg"
-import Equipamento from "../../Image/aparelho.jpg"
+import Sala from "../../Image/sala.jpg";
+import Recep from "../../Image/recep.jpg";
+import Equipamento from "../../Image/aparelho.jpg";
 import Button from "../../components/Button";
 import MyFooter from "../../components/Footer";
+import { useState } from "react";
 
 const About = () => {
+  const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
+
+  const openModal = (image: string) => {
+    setEnlargedImage(image);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    setEnlargedImage(null);
+    document.body.style.overflow = "auto";
+  };
+
   return (
     <>
       <Header />
@@ -45,11 +61,44 @@ const About = () => {
         <p>AGENDE JÁ SUA AVALIAÇÃO!</p>
         <Button text={"AGENDE SUA CONSULTA"} />
         <Images>
-          <img src={Sala} />
-          <img src={Recep} />
-          <img src={Equipamento} />
+          <Highlight src={Sala} alt="Sala" onClick={() => openModal(Sala)} />
+          <Highlight
+            src={Recep}
+            alt="Recepção"
+            onClick={() => openModal(Recep)}
+          />
+          <Highlight
+            src={Equipamento}
+            alt="Equipamento"
+            onClick={() => openModal(Equipamento)}
+          />
         </Images>
       </Container>
+      {enlargedImage && (
+        <div className="modal fade show" style={{ display: "block" }}>
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-body">
+                <EnlargedImage src={enlargedImage} alt="Ampliada" />
+              </div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={closeModal}
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+      <Information>
+        <div className="check"></div>
+        <div className="check"></div>
+        <div className="check"></div>
+      </Information>
       <MyFooter />
     </>
   );
