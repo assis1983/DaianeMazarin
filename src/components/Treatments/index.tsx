@@ -31,7 +31,7 @@ const Treatments = () => {
               a autoconfiança.
             </p>
           </div>
-          <Button />
+          <Button text={"SAIBA MAIS"} />
         </StyleDivImages>
         <StyleDivImages>
           <Images src={Face} />
@@ -45,7 +45,7 @@ const Treatments = () => {
               luminosidade natural, promovendo uma pele saudável e radiante.
             </p>
           </div>
-          <Button />
+          <Button text={"SAIBA MAIS"} />
         </StyleDivImages>
         <StyleDivImages>
           <Images src={Nutrition} />
@@ -60,7 +60,7 @@ const Treatments = () => {
               bem-estar geral.
             </p>
           </div>
-          <Button />
+          <Button text={"SAIBA MAIS"} />
         </StyleDivImages>
       </ContainerImages>
     </>
