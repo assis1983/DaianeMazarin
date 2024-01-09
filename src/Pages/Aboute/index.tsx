@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import Header from "../../components/Header";
 import {
   StyledAre,
@@ -14,12 +16,16 @@ import Desck from "../../Image/dm-27.jpg";
 import Sala from "../../Image/sala.jpg";
 import Recep from "../../Image/recep.jpg";
 import Equipamento from "../../Image/aparelho.jpg";
+import ImagePrime from "../../Image/img-01.jpg";
 import Button from "../../components/Button";
 import MyFooter from "../../components/Footer";
-import { useState } from "react";
+import IconCheck from "../../assets/check";
+import IconSquare from "../../assets/square";
+import IconPeople from "../../assets/people";
 
 const About = () => {
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
+  const [ref, inView] = useInView({ triggerOnce: true });
 
   const openModal = (image: string) => {
     setEnlargedImage(image);
@@ -38,7 +44,7 @@ const About = () => {
         <TextAre>Quem Somos</TextAre>
       </StyledAre>
       <Container>
-        <StyleTextAbout>
+        <StyleTextAbout ref={ref}>
           <p>
             A <span>CLÍNICA DAIANE MAZARIN ESTÉTICA AVANÇADA</span> iniciou as
             atividades em 2009, em sua primeira sede localizada no Lago Sul, com
@@ -61,16 +67,23 @@ const About = () => {
         <p>AGENDE JÁ SUA AVALIAÇÃO!</p>
         <Button text={"AGENDE SUA CONSULTA"} />
         <Images>
-          <Highlight src={Sala} alt="Sala" onClick={() => openModal(Sala)} />
+          <Highlight
+            src={Sala}
+            alt="Sala"
+            onClick={() => openModal(Sala)}
+            style={{ opacity: inView ? 1 : 0, transition: "opacity 6s" }}
+          />
           <Highlight
             src={Recep}
             alt="Recepção"
             onClick={() => openModal(Recep)}
+            style={{ opacity: inView ? 1 : 0, transition: "opacity 6s" }}
           />
           <Highlight
             src={Equipamento}
             alt="Equipamento"
             onClick={() => openModal(Equipamento)}
+            style={{ opacity: inView ? 1 : 0, transition: "opacity 6s" }}
           />
         </Images>
       </Container>
@@ -95,10 +108,42 @@ const About = () => {
         </div>
       )}
       <Information>
-        <div className="check"></div>
-        <div className="check"></div>
-        <div className="check"></div>
+        <div className="check">
+          <div className="Icon">
+            <IconCheck />
+          </div>
+          <p>6 anos de experiência</p>
+          <p>
+            Com 06 anos de dedicação ao setor de estética, nosso estabelecimento
+            é reconhecido como um dos mais experientes e competentes da região.
+          </p>
+        </div>
+        <div className="check">
+          <div className="Icon">
+            <IconSquare />
+          </div>
+          <p>Melhores e mais modernas tecnologias</p>
+          <p>
+            Para garantir os melhores resultados em nossos tratamentos,
+            investimos constantemente em tecnologias avançadas e de alta
+            qualidade.
+          </p>
+        </div>
+        <div className="check">
+          <div className="Icon">
+            <IconPeople />
+          </div>
+          <p>Clientes Satisfeitos</p>
+          <p>
+            A satisfação dos nossos clientes é a nossa prioridade. Por isso,
+            trabalhamos com dedicação e profissionalismo para garantir
+            resultados eficazes.
+          </p>
+        </div>
       </Information>
+      <Container>
+        <img src={ImagePrime} style={{ opacity: inView ? 1 : 0, transition: "opacity 6s" }}/>
+      </Container>
       <MyFooter />
     </>
   );

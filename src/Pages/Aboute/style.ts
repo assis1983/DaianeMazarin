@@ -36,9 +36,10 @@ export const StyleDesck = styled.img`
 
 export const Images = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 5rem;
   cursor: pointer;
+  
 `;
 
 export const Highlight = styled.img`
@@ -62,18 +63,31 @@ export const Information = styled.div`
   justify-content: space-around;
   height: 550px;
   background-color: #e6e6fa;
-  margin-bottom: 20px;
   .check {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 3%;
     width: 30%;
     height: 80%;
-    background-color: #8B008B;
+    background-color: #8b008b;
     border-radius: 5px;
     border: 2px solid transparent;
     transition: border-color 0.2s ease-in-out;
 
     &:hover {
-      border: 5px solid #00bcd4; 
+      border: 2px solid #00bcd4;
+    }
+    p {
+      max-width: 350px;
+      color: white;
+      text-align: justify;
+      margin-top: 40px;
+      font-size: 1.1rem;
+    }
+    .Icon {
+      margin-top: 30px;
     }
   }
+
 `;
