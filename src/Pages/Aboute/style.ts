@@ -20,7 +20,7 @@ export const TextAre = styled.div`
 
 export const StyleTextAbout = styled.div`
   display: flex;
-  gap: 20px;
+  gap: 100px;
   text-align: justify;
   font-size: 1.2rem;
   span {
@@ -31,7 +31,7 @@ export const StyleTextAbout = styled.div`
 `;
 
 export const StyleDesck = styled.img`
-  width: 50%;
+  height: 350px;
 `;
 
 export const Images = styled.div`
@@ -39,7 +39,6 @@ export const Images = styled.div`
   justify-content: space-between;
   margin-top: 5rem;
   cursor: pointer;
-  
 `;
 
 export const Highlight = styled.img`
@@ -89,5 +88,73 @@ export const Information = styled.div`
       margin-top: 30px;
     }
   }
+`;
 
+export const Experience = styled.div`
+  display: flex;
+  .text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    .anos {
+      color: #86162d;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+
+    .tecn {
+      font-size: 1.2rem;
+      color: #696969;
+      margin-top: 2rem;
+    }
+    .satisfaction {
+      font-size: 1rem;
+      color: #696969;
+    }
+
+    h5 {
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+  }
+`;
+
+export const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e6e6fa;
+  color: #8b008b;
+  height: 80rem;
+  margin-bottom: 20px;
+  h2 {
+    font-size: 187.5%;
+    line-height: 1.25;
+    margin-top: 50px;
+  }
+  p {
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  .testimony {
+    font-style: italic;
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+`;
+
+export const Line = styled.div`
+  width: 100%;
+  border-bottom: 5px solid #eb92a3;
+  margin-bottom: 10px;
+  max-width: 800px;
+  margin-top: 50px;
+`;
+
+export const NameClient = styled.div`
+  margin-right: 400px;
+  color: #333;
 `;

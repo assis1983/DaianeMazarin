@@ -11,6 +11,10 @@ import {
   EnlargedImage,
   Highlight,
   Information,
+  Experience,
+  Title,
+  Line,
+  NameClient,
 } from "./style";
 import Desck from "../../Image/dm-27.jpg";
 import Sala from "../../Image/sala.jpg";
@@ -71,19 +75,19 @@ const About = () => {
             src={Sala}
             alt="Sala"
             onClick={() => openModal(Sala)}
-            style={{ opacity: inView ? 1 : 0, transition: "opacity 6s" }}
+            style={{ opacity: inView ? 1 : 0, transition: "opacity 3s" }}
           />
           <Highlight
             src={Recep}
             alt="Recepção"
             onClick={() => openModal(Recep)}
-            style={{ opacity: inView ? 1 : 0, transition: "opacity 6s" }}
+            style={{ opacity: inView ? 1 : 0, transition: "opacity 3s" }}
           />
           <Highlight
             src={Equipamento}
             alt="Equipamento"
             onClick={() => openModal(Equipamento)}
-            style={{ opacity: inView ? 1 : 0, transition: "opacity 6s" }}
+            style={{ opacity: inView ? 1 : 0, transition: "opacity 3s" }}
           />
         </Images>
       </Container>
@@ -142,8 +146,71 @@ const About = () => {
         </div>
       </Information>
       <Container>
-        <img src={ImagePrime} style={{ opacity: inView ? 1 : 0, transition: "opacity 6s" }}/>
+        <Experience>
+          <img src={ImagePrime} />
+          <div className="text">
+            <p className="anos">5 + ANOS DE EXPERIÊNCIA</p>
+            <h1>Referência em estética, atendimento e bem estar</h1>
+            <p className="tecn">
+              Temos o que há de mais tecnológico para tratamentos faciais e
+              corporais
+            </p>
+            <h5>Time de Elite</h5>
+            <p className=" satisfaction">
+              Apostamos na escolha, a dedo, do melhor time de profissionais.
+              Desde as funções básicas aos especialistas, nossa equipe
+              trabalhará empenhada em tornar sua experiência um momento de
+              intensa satisfação.
+            </p>
+          </div>
+        </Experience>
       </Container>
+      <Title>
+        <h2>DEPOIMENTOS DE CLIENTES</h2>
+        <p>
+          Os seus pontos de vista e percepções são importantes para nós. Ficamos
+          muito satisfeitos quando nos dizem que podemos compartilhar esses de
+          forma mais ampla e estamos orgulhosos de ser capaz de dar-lhes acesso
+          a esses depoimentos.
+        </p>
+        <Line />
+        <p className="testimony">
+          " Ter uma única pessoa como um contato permanente contribui para uma
+          relação de trabalho muito eficaz. Essa pessoa conhece a nossa empresa
+          muito bem. Ele está conectado com os profissionais locais da Atradius,
+          que têm expertise local e conhecem os procedimentos e regulamentos nos
+          países onde trabalham."
+        </p>
+        <NameClient>Eder Roberto de Assis, Cliente de Emagrecimento</NameClient>
+
+        <Line />
+        <p className="testimony">
+          "Temos trabalhado com Atradius Collections durante muitos anos
+          recebendo casos locais e também de dívidas no exterior. Eles são uma
+          parte vital do nosso negócio à medida que muitas vezes precisamos de
+          seus conhecimentos e línguas locais para perseguir uma dívida que já
+          não estamos mais recebendo nenhum retorno. Os serviços oferecidos pela
+          Atradius Collections são muito abrangentes e podem ser adaptados para
+          atender as nossas necessidades - desde uma carta de pequena dívida até
+          uma ação judicial completa. Esta flexibilidade é sempre adequada ao
+          nosso negócio e atende aos requisitos perfeitamente. O pessoal do
+          escritório da Atradius “são profissionais amigáveis e podem ser
+          abordados a qualquer momento para obter ajuda ou para obter feedback
+          sobre casos. Nós os recomendamos a qualquer empresa como uma parte
+          essencial do processo de cobrança de dívidas."
+        </p>
+        <NameClient>Rafael Mazarin Oliveira, Cliente de Emagrecimento</NameClient> 
+        <Line />
+        <p className="testimony">
+          " Ter uma única pessoa como um contato permanente contribui para uma
+          relação de trabalho muito eficaz. Essa pessoa conhece a nossa empresa
+          muito bem. Ele está conectado com os profissionais locais da Atradius,
+          que têm expertise local e conhecem os procedimentos e regulamentos nos
+          países onde trabalham."
+        </p>
+        <NameClient>José Henrique Mazarin, Cliente de Estética Facial</NameClient>
+      </Title>
+
       <MyFooter />
     </>
   );
