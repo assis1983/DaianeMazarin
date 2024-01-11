@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const StyleTreatments = styled.div`
     text-align: center;
     font-size: 2.5rem;
+    color: #eb92a3;
+    font-weight: bold;
     span {
         &:first-child {
           color: #8b008b; 
@@ -13,6 +15,7 @@ export const StyleTreatments = styled.div`
 export const Frase = styled.p`
   font-size: 1.2rem;
   text-align: center;
+  color: #8b008b;
 `;
 
 export const ContainerImages = styled.div`
@@ -28,6 +31,7 @@ export const ContainerImages = styled.div`
   }
   p {
     text-align: justify;
+    color: #8b008b;
   }
   .text {
     max-width: 320px;

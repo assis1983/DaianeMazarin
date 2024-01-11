@@ -6,11 +6,10 @@ export const StyleButton = styled.button`
   border-radius: 10px;
   border: none;
   color: #8b008b;
-  background-color: #e6e6fa;
+  background-color: #8b008b;
   transition: transform 0.3s ease;
-  &:hover,
-  &:focus {
-    color: #00a8cc;
-    transform: scale(1.1);
+  color: white;
+  &:hover {
+    background-color: #6a006a; 
   }
 `;

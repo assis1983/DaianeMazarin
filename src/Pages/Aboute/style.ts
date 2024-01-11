@@ -70,12 +70,12 @@ export const Information = styled.div`
     width: 30%;
     height: 80%;
     background-color: #8b008b;
-    border-radius: 5px;
+    border-radius: 20px;
     border: 2px solid transparent;
     transition: border-color 0.2s ease-in-out;
 
     &:hover {
-      border: 2px solid #00bcd4;
+      border: 4px solid #eb92a3;
     }
     p {
       max-width: 350px;
@@ -92,32 +92,38 @@ export const Information = styled.div`
 
 export const Experience = styled.div`
   display: flex;
+  background-color: #e6e6fa;
+  border-radius: 20px;
   .text {
     display: flex;
     flex-direction: column;
     margin-left: 60px;
     .anos {
-      color: #86162d;
+      color: #eb92a3;
       font-size: 1.5rem;
       font-weight: bold;
+      margin-top: 2rem;
     }
     h1 {
       font-size: 3rem;
+      color: #8b008b; 
     }
 
     .tecn {
       font-size: 1.2rem;
-      color: #696969;
+      color: #8b008b; 
       margin-top: 2rem;
     }
     .satisfaction {
       font-size: 1rem;
-      color: #696969;
+      color: #8b008b; 
     }
 
     h5 {
       font-size: 2rem;
       margin-top: 3rem;
+      color: #8b008b; 
+
     }
   }
 `;
@@ -128,7 +134,7 @@ export const Title = styled.div`
   align-items: center;
   background-color: #e6e6fa;
   color: #8b008b;
-  height: 80rem;
+  height: 65rem;
   margin-bottom: 20px;
   h2 {
     font-size: 187.5%;

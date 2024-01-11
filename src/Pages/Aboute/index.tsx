@@ -189,15 +189,7 @@ const About = () => {
           recebendo casos locais e também de dívidas no exterior. Eles são uma
           parte vital do nosso negócio à medida que muitas vezes precisamos de
           seus conhecimentos e línguas locais para perseguir uma dívida que já
-          não estamos mais recebendo nenhum retorno. Os serviços oferecidos pela
-          Atradius Collections são muito abrangentes e podem ser adaptados para
-          atender as nossas necessidades - desde uma carta de pequena dívida até
-          uma ação judicial completa. Esta flexibilidade é sempre adequada ao
-          nosso negócio e atende aos requisitos perfeitamente. O pessoal do
-          escritório da Atradius “são profissionais amigáveis e podem ser
-          abordados a qualquer momento para obter ajuda ou para obter feedback
-          sobre casos. Nós os recomendamos a qualquer empresa como uma parte
-          essencial do processo de cobrança de dívidas."
+          não estamos mais recebendo nenhum retorno. "
         </p>
         <NameClient>Rafael Mazarin Oliveira, Cliente de Emagrecimento</NameClient> 
         <Line />
