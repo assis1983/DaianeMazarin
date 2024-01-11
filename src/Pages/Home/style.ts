@@ -24,3 +24,4 @@ export const StyledImages = styled.div`
     border-radius: 20px;
   }
 `;
+

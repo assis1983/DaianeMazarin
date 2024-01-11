@@ -6,7 +6,7 @@ import IconCheck from "../../assets/check";
 import IconSquare from "../../assets/square";
 import IconPeople from "../../assets/people";
 import { ExperienceTrat, StyleTop } from "./style";
-import { StyleButtonAvaliation } from "../../components/ButtonAvaliation/style";
+import ButtonAvaliation from "../../components/ButtonAvaliation";
 
 const Tratamentos = () => {
   return (
@@ -58,9 +58,7 @@ const Tratamentos = () => {
             melhorar os nossos serviços. Para deixar a sua avaliação, basta
             clicar no botão abaixo
           </p>
-          <StyleButtonAvaliation>
-            CLIQUE AQUI PARA AVALIAR
-          </StyleButtonAvaliation>
+          <ButtonAvaliation text={"CLIQUE AQUI PARA AVALIAR"} to={"/contact"}/>
         </ExperienceTrat>
       </Container>
       <MyFooter />

@@ -2,8 +2,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "../Pages/Home";
 import About from "../Pages/Aboute/index"
 import Tratamentos from "../Pages/Trataments";
+import Contact from "../Pages/Contact";
+import Team from "../Pages/Team";
 
 const Rotas = () => {
+  
   return (
     <>
       <BrowserRouter>
@@ -11,6 +14,8 @@ const Rotas = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/tratamentos" element={<Tratamentos />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/team" element={<Team />} />
         </Routes>
       </BrowserRouter>
     </>

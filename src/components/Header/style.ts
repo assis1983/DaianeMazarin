@@ -10,12 +10,14 @@ export const HeaderContainer = styled.header`
 
 export const Nav = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   img {
-    width: 12%;
+    width: 72%;
     margin-right: 50px;
     margin-top: -5px;
+  }
+  div {
+    width: 20%;
   }
 `;
 

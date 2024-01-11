@@ -5,7 +5,7 @@ export const Baseboard = styled.div`
   justify-content: space-around;
   height: 15rem;
   background-color: #e6e6fa;
-  
+
   .TitleSobre {
     display: flex;
     flex-direction: column;
@@ -59,9 +59,6 @@ export const Baseboard = styled.div`
     }
     p {
       font-size: 1rem;
-      &:hover {
-        color: #00a8cc;
-      }
     }
   }
 

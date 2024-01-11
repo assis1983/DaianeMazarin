@@ -2,6 +2,7 @@ import { Baseboard, Copyright } from "./style";
 import IconFace from "../../assets/facebook";
 import IconInstagram from "../../assets/instagram";
 import IconWhats from "../../assets/whats";
+import { Link } from "react-router-dom";
 
 const MyFooter = () => {
   const linkInstagram = "https://www.instagram.com/daianemazarinestetica/";
@@ -15,26 +16,26 @@ const MyFooter = () => {
         <div className="TitleSobre">
           <h1>Sobre Nós</h1>
           <p>
-            A Clínica Daiane Mazarin Estética Avançada fundada em 2013, oferece soluções de
-            estética e nutrição unindo tecnologia e qualidade para atender às
-            necessidades de cada paciente, com equipe altamente capacitada e
-            equipamentos de última geração.
+            A Clínica Daiane Mazarin Estética Avançada fundada em 2013, oferece
+            soluções de estética e nutrição unindo tecnologia e qualidade para
+            atender às necessidades de cada paciente, com equipe altamente
+            capacitada e equipamentos de última geração.
           </p>
         </div>
         <div className="TitleNav">
           <h1>Navegue</h1>
-          <a href="#">
+          <Link to={"/"}>
             <p>Inicio</p>
-          </a>
-          <a href="">
+          </Link>
+          <Link to={"/about"}>
             <p>Quem Somos</p>
-          </a>
+          </Link>
           <a href="">
             <p>Serviços</p>
           </a>
-          <a href="">
+          <Link to={"/contact"}>
             <p>Contatos</p>
-          </a>
+          </Link>
           <a
             href=""
             target="_blank"
