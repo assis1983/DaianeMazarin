@@ -9,6 +9,7 @@ export const ExperienceTrat = styled.div`
   background-color: #e6e6fa;
   border-radius: 12px;
   margin-bottom: 20px;
+
   h5 {
     color: #eb92a3;
     font-weight: bold;
@@ -18,7 +19,10 @@ export const ExperienceTrat = styled.div`
   }
   p {
     max-width: 700px;
-    color: #8b008b; 
+    color: #8b008b;
   }
 `;
 
+export const StyleTop = styled.div`
+  margin-top: 80px;
+`;

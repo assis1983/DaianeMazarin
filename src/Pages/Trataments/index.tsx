@@ -5,15 +5,16 @@ import { Container, Information } from "../Aboute/style";
 import IconCheck from "../../assets/check";
 import IconSquare from "../../assets/square";
 import IconPeople from "../../assets/people";
-import { ExperienceTrat } from "./style";
+import { ExperienceTrat, StyleTop } from "./style";
 import { StyleButtonAvaliation } from "../../components/ButtonAvaliation/style";
-
 
 const Tratamentos = () => {
   return (
     <>
       <Header />
-      <Treatments />
+      <StyleTop>
+        <Treatments />
+      </StyleTop>
       <Information>
         <div className="check">
           <div className="Icon">

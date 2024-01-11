@@ -1,10 +1,13 @@
 import { HeaderContainer, Nav, NavLink } from "./style";
 import ButtonMenu from "../ButtonHeader";
+import Logo from "../../Image/logo.jpg";
 
 const Header = () => {
   return (
     <HeaderContainer>
       <Nav>
+      <img src= {Logo} />
+
         <NavLink to={"/"}>INÍCIO</NavLink>
         <NavLink to={"/about"}>SOBRE</NavLink>
         <NavLink to={"/tratamentos"}>TRATAMENTOS</NavLink>

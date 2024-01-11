@@ -68,7 +68,7 @@ const About = () => {
           </p>
           <StyleDesck src={Desck} />
         </StyleTextAbout>
-        <p>AGENDE JÁ SUA AVALIAÇÃO!</p>
+        <p className="color-agenda">AGENDE JÁ SUA AVALIAÇÃO!</p>
         <Button text={"AGENDE SUA CONSULTA"} />
         <Images>
           <Highlight

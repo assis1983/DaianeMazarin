@@ -4,6 +4,10 @@ export const Container = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   padding: 20px;
+  .color-agenda {
+    color: #eb92a3;
+    font-weight: bold;
+  }
 `;
 
 export const StyledAre = styled.div`
@@ -16,6 +20,7 @@ export const TextAre = styled.div`
   margin: 0 auto;
   padding: 20px;
   color: #8b008b;
+  margin-top: 80px;
 `;
 
 export const StyleTextAbout = styled.div`
@@ -23,9 +28,14 @@ export const StyleTextAbout = styled.div`
   gap: 100px;
   text-align: justify;
   font-size: 1.2rem;
+  p {
+    color: #8b008b; 
+
+  }
   span {
     &:first-child {
-      color: #8b008b; 
+      color: #eb92a3;
+      font-weight: bold;
     }
  
 `;
@@ -106,24 +116,23 @@ export const Experience = styled.div`
     }
     h1 {
       font-size: 3rem;
-      color: #8b008b; 
+      color: #8b008b;
     }
 
     .tecn {
       font-size: 1.2rem;
-      color: #8b008b; 
+      color: #8b008b;
       margin-top: 2rem;
     }
     .satisfaction {
       font-size: 1rem;
-      color: #8b008b; 
+      color: #8b008b;
     }
 
     h5 {
       font-size: 2rem;
       margin-top: 3rem;
-      color: #8b008b; 
-
+      color: #8b008b;
     }
   }
 `;
