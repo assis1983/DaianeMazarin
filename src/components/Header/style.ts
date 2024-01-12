@@ -11,9 +11,9 @@ export const HeaderContainer = styled.header`
 export const Nav = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-around;
   img {
     width: 72%;
-    margin-right: 50px;
     margin-top: -5px;
   }
   div {
