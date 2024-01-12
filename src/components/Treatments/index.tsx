@@ -60,7 +60,7 @@ const Treatments = () => {
               bem-estar geral.
             </p>
           </div>
-          <Button text={"SAIBA MAIS"} to={""} />
+          <Button text={"SAIBA MAIS"} to={"/emagrecimento"} />
         </StyleDivImages>
       </ContainerImages>
     </>
