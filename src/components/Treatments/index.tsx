@@ -45,7 +45,7 @@ const Treatments = () => {
               luminosidade natural, promovendo uma pele saudável e radiante.
             </p>
           </div>
-          <Button text={"SAIBA MAIS"} to={""} />
+          <Button text={"SAIBA MAIS"} to={"/facial"} />
         </StyleDivImages>
         <StyleDivImages>
           <Images src={Nutrition} />

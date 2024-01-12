@@ -5,6 +5,8 @@ import Tratamentos from "../Pages/Trataments";
 import Contact from "../Pages/Contact";
 import Team from "../Pages/Team";
 import BodyEsthetic from "../Pages/BodyEsthetic";
+import Facial from "../Pages/Facial Aesthetics";
+
 
 const Rotas = () => {
   
@@ -18,6 +20,7 @@ const Rotas = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
           <Route path="/esthetic" element={<BodyEsthetic />} />
+          <Route path="/facial" element={<Facial />} />
         </Routes>
       </BrowserRouter>
     </>
