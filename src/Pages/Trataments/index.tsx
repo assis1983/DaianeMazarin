@@ -13,7 +13,7 @@ const Tratamentos = () => {
     <>
       <Header />
       <StyleTop>
-        <Treatments />
+        <Treatments/>
       </StyleTop>
       <Information>
         <div className="check">

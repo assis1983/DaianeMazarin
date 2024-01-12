@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import { StyleButton } from "./style";
 
 type Props = {
   text: string;
-}
+  to: string;
+};
 
-const Button = ({ text }: Props) => {
-  const openWhatsApp = () => {
-    window.open("https://api.whatsapp.com/send?phone=5518996832891", "_blank");
-  };
+const Button = ({ text, to }: Props) => {
   return (
     <>
-      <StyleButton onClick={openWhatsApp}>{text}</StyleButton>
+      <Link to={to}>
+        <StyleButton>{text}</StyleButton>
+      </Link>
     </>
   );
 };

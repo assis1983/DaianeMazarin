@@ -4,6 +4,7 @@ import About from "../Pages/Aboute/index"
 import Tratamentos from "../Pages/Trataments";
 import Contact from "../Pages/Contact";
 import Team from "../Pages/Team";
+import BodyEsthetic from "../Pages/BodyEsthetic";
 
 const Rotas = () => {
   
@@ -16,6 +17,7 @@ const Rotas = () => {
           <Route path="/tratamentos" element={<Tratamentos />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/team" element={<Team />} />
+          <Route path="/esthetic" element={<BodyEsthetic />} />
         </Routes>
       </BrowserRouter>
     </>
