@@ -1,8 +1,14 @@
 import { useState } from "react";
-import "../../style.scss"
+import "../../style.scss";
 import { motion } from "framer-motion";
+import { StyledDivCards } from "./style";
 
-const Cards = () => {
+type CardsProps = {
+  text: string;
+  Image: React.ReactNode;
+};
+
+const Cards = ({ text, Image }: CardsProps) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <motion.div
@@ -13,9 +19,10 @@ const Cards = () => {
       transition={{ duration: 0.5 }}
     >
       <motion.div className="card-top" layout="position">
-        <div className="card-top__header">
-          <h3>React + Framer motion 🚀</h3>
-        </div>
+        <StyledDivCards>
+        {Image && Image}
+          <h3>{text}</h3>
+        </StyledDivCards>
       </motion.div>
 
       {isOpen && (
@@ -27,17 +34,15 @@ const Cards = () => {
             duration: 0.5,
             delay: 0.25,
             type: "spring",
-            damping: 25,
+            damping: 10,
             stiffness: 100,
           }}
         >
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            eligendi, doloribus cum nesciunt alias harum molestias tempore,
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            eligendi, doloribus cum nesciunt alias harum molestias tempore,
+          <p className="text-white">
+            Acúmulo de gordura sob a pele, resultando em ondulações. Tratamentos
+            incluem dieta saudável, exercícios, massagens, cremes tópicos e
+            procedimentos estéticos como radiofrequência e terapia a vácuo.
+            Resultados podem variar.
           </p>
         </motion.div>
       )}

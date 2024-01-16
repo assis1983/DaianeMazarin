@@ -34,4 +34,14 @@ export const StyleTextCenter = styled.div`
   padding: 20px;
   margin-top: 40px;
   color: #8b008b;
+  span {
+    &:first-child {
+      color: #eb92a3; 
+    }
 `;
+
+export const StyleFlexCards = styled.div`
+  display: flex;
+  justify-content: space-around;
+
+`

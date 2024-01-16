@@ -4,7 +4,12 @@ import { Container, StyledAre, TextAre } from "../Aboute/style";
 import { StyleBody, StyleText, StyleTextCenter } from "./style";
 import Body from "../../Image/service-01.jpg";
 import Button from "../../components/Button";
+import { StyleFlexCards } from "./style";
 import Cards from "../../components/Cards";
+import Dots from "../../assets/dots";
+import IconCheckSquare from "../../assets/checksquare";
+import IconExcamation from "../../assets/exclamation";
+
 
 const BodyEsthetic = () => {
   const openWhatsApp = () => {
@@ -41,9 +46,21 @@ const BodyEsthetic = () => {
           </StyleText>
         </StyleBody>
         <StyleTextCenter>
-          <h1>Conheça Todos nossos Tratamentos</h1>
+          <h1><span>Conheça Todos nossos</span> Tratamentos</h1>
         </StyleTextCenter>
-        <Cards />
+        <StyleFlexCards>
+          <Cards text={"Celulite"} Image={<><IconCheckSquare /><Dots /></>} />
+          <Cards text={"Massagem"} Image={<><IconCheckSquare /><Dots /></>} />
+          <Cards text={"EndoLaser"} Image={<><IconCheckSquare /><Dots /></>} />
+        </StyleFlexCards>
+        <StyleTextCenter>
+          <h1><span>Nossos</span> Procedimentos</h1>
+        </StyleTextCenter>
+        <StyleFlexCards>
+          <Cards text={"Celulite"} Image={<><IconExcamation /><Dots /></>} />
+          <Cards text={"Massagem"} Image={<><IconExcamation /><Dots /></>} />
+          <Cards text={"EndoLaser"} Image={<><IconExcamation /><Dots /></>} />
+        </StyleFlexCards>
       </Container>
       <MyFooter />
     </div>
