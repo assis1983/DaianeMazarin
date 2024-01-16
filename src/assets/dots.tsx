@@ -3,8 +3,8 @@ function Dots() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="35"
-      height="35"
+      width="45"
+      height="45"
       fill="white"
       className="bi bi-three-dots"
       viewBox="0 0 16 16"

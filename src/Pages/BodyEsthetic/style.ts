@@ -43,5 +43,8 @@ export const StyleTextCenter = styled.div`
 export const StyleFlexCards = styled.div`
   display: flex;
   justify-content: space-around;
-
-`
+  margin-bottom: 50px;
+  Image {
+    width: 50%;
+  }
+`;
