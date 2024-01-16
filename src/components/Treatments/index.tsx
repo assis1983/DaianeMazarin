@@ -31,7 +31,9 @@ const Treatments = () => {
               a autoconfiança.
             </p>
           </div>
-          <Button text={"SAIBA MAIS"} to={"/esthetic"} />
+          <Button text={"SAIBA MAIS"} to={"/esthetic"} onClick={function (): void {
+            throw new Error("Function not implemented.");
+          } } />
         </StyleDivImages>
         <StyleDivImages>
           <Images src={Face} />
@@ -45,7 +47,9 @@ const Treatments = () => {
               luminosidade natural, promovendo uma pele saudável e radiante.
             </p>
           </div>
-          <Button text={"SAIBA MAIS"} to={"/facial"} />
+          <Button text={"SAIBA MAIS"} to={"/facial"} onClick={function (): void {
+            throw new Error("Function not implemented.");
+          } } />
         </StyleDivImages>
         <StyleDivImages>
           <Images src={Nutrition} />
@@ -60,7 +64,9 @@ const Treatments = () => {
               bem-estar geral.
             </p>
           </div>
-          <Button text={"SAIBA MAIS"} to={"/emagrecimento"} />
+          <Button text={"SAIBA MAIS"} to={"/emagrecimento"} onClick={function (): void {
+            throw new Error("Function not implemented.");
+          } } />
         </StyleDivImages>
       </ContainerImages>
     </>

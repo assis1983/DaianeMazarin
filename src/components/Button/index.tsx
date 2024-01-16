@@ -4,13 +4,14 @@ import { StyleButton } from "./style";
 type Props = {
   text: string;
   to: string;
+  onClick: () => void;
 };
 
-const Button = ({ text, to }: Props) => {
+const Button = ({ text, to, onClick }: Props) => {
   return (
     <>
       <Link to={to}>
-        <StyleButton>{text}</StyleButton>
+        <StyleButton type="button" onClick={onClick}>{text}</StyleButton>
       </Link>
     </>
   );

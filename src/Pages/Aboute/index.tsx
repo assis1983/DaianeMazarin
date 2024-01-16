@@ -41,6 +41,10 @@ const About = () => {
     document.body.style.overflow = "auto";
   };
 
+  const openWhatsApp = () => {
+    window.open("https://api.whatsapp.com/send?phone=5518996832891", "_blank");
+  };
+
   return (
     <>
       <Header />
@@ -69,7 +73,7 @@ const About = () => {
           <StyleDesck src={Desck} />
         </StyleTextAbout>
         <p className="color-agenda">AGENDE JÁ SUA AVALIAÇÃO!</p>
-        <Button text={"AGENDE SUA CONSULTA"} />
+        <Button text={"AGENDE SUA CONSULTA"} to={""} onClick={openWhatsApp}/>
         <Images>
           <Highlight
             src={Sala}
