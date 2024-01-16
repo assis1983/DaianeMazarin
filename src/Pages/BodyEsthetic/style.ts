@@ -33,6 +33,5 @@ export const StyleTextCenter = styled.div`
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  margin-bottom: 150px;
   color: #8b008b;
 `;

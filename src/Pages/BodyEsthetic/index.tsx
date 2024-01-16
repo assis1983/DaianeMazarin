@@ -4,7 +4,7 @@ import { Container, StyledAre, TextAre } from "../Aboute/style";
 import { StyleBody, StyleText, StyleTextCenter } from "./style";
 import Body from "../../Image/service-01.jpg";
 import Button from "../../components/Button";
-import Square from "../../components/Square";
+import Cards from "../../components/Cards";
 
 const BodyEsthetic = () => {
   const openWhatsApp = () => {
@@ -43,7 +43,7 @@ const BodyEsthetic = () => {
         <StyleTextCenter>
           <h1>Conheça Todos nossos Tratamentos</h1>
         </StyleTextCenter>
-        <Square />
+        <Cards />
       </Container>
       <MyFooter />
     </div>
