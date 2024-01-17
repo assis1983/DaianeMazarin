@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const StyleBody = styled.div`
   display: flex;
   background-color: #e6e6fa;
+
   .title {
     text-align: justify;
     margin-left: 60px;
@@ -43,8 +44,8 @@ export const StyleTextCenter = styled.div`
 export const StyleFlexCards = styled.div`
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin-bottom: 50px;
-  Image {
-    width: 50%;
   }
+  
 `;

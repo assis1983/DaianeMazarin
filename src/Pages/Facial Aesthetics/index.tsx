@@ -14,7 +14,7 @@ import ButtonAvaliation from "../../components/ButtonAvaliation";
 import { ExperienceTrat } from "../Trataments/style";
 import Face from "../../Image/img-01.jpg";
 import Button from "../../components/Button";
-import Card from "../../components/CardTest";
+import Card from "../../components/Card";
 
 const Facial = () => {
   const openWhatsApp = () => {
@@ -58,7 +58,7 @@ const Facial = () => {
           </h1>
         </StyleTextCenter>
         <StyleFlexCards>
-        <Card
+          <Card
             popoverText={
               "Acúmulo de gordura sob a pele, resultando em ondulações. Tratamentos incluem dieta saudável, exercícios, massagens, cremes tópicos e procedimentos estéticos como radiofrequência e terapia a vácuo. Resultados podem variar."
             }
@@ -72,6 +72,58 @@ const Facial = () => {
             text={"Celulite"}
           />
           <Card
+            popoverText={
+              "Acúmulo de gordura sob a pele, resultando em ondulações. Tratamentos incluem dieta saudável, exercícios, massagens, cremes tópicos e procedimentos estéticos como radiofrequência e terapia a vácuo. Resultados podem variar."
+            }
+            Image={
+              <>
+                <IconCheckSquare />
+                <Dots />
+              </>
+            }
+            title={"Celulite"}
+            text={"Celulite"}
+          />
+          <Card
+            popoverText={
+              "Acúmulo de gordura sob a pele, resultando em ondulações. Tratamentos incluem dieta saudável, exercícios, massagens, cremes tópicos e procedimentos estéticos como radiofrequência e terapia a vácuo. Resultados podem variar."
+            }
+            Image={
+              <>
+                <IconCheckSquare />
+                <Dots />
+              </>
+            }
+            title={"Celulite"}
+            text={"Celulite"}
+          />
+          <Card
+            popoverText={
+              "Acúmulo de gordura sob a pele, resultando em ondulações. Tratamentos incluem dieta saudável, exercícios, massagens, cremes tópicos e procedimentos estéticos como radiofrequência e terapia a vácuo. Resultados podem variar."
+            }
+            Image={
+              <>
+                <IconCheckSquare />
+                <Dots />
+              </>
+            }
+            title={"Celulite"}
+            text={"Celulite"}
+          />
+          <Card
+            popoverText={
+              "Acúmulo de gordura sob a pele, resultando em ondulações. Tratamentos incluem dieta saudável, exercícios, massagens, cremes tópicos e procedimentos estéticos como radiofrequência e terapia a vácuo. Resultados podem variar."
+            }
+            Image={
+              <>
+                <IconCheckSquare />
+                <Dots />
+              </>
+            }
+            title={"Celulite"}
+            text={"Celulite"}
+          />
+           <Card
             popoverText={
               "Acúmulo de gordura sob a pele, resultando em ondulações. Tratamentos incluem dieta saudável, exercícios, massagens, cremes tópicos e procedimentos estéticos como radiofrequência e terapia a vácuo. Resultados podem variar."
             }
@@ -117,7 +169,7 @@ const Facial = () => {
           </h1>
         </StyleTextCenter>
         <StyleFlexCards>
-        <Card
+          <Card
             title={"Herus Hifu"}
             text={"Herus Hifu"}
             Image={

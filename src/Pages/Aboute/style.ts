@@ -42,6 +42,7 @@ export const StyleTextAbout = styled.div`
 
 export const StyleDesck = styled.img`
   height: 350px;
+  border-radius: 20px;
 `;
 
 export const Images = styled.div`
@@ -54,7 +55,8 @@ export const Images = styled.div`
 export const Highlight = styled.img`
   object-fit: cover;
   transition: transform 0.2s ease-in-out;
-
+  border-radius: 5px;
+  width: 25rem;
   &:hover {
     transform: scale(1.1);
   }
@@ -104,6 +106,9 @@ export const Experience = styled.div`
   display: flex;
   background-color: #e6e6fa;
   border-radius: 20px;
+  img {
+    border-radius: 20px;
+  }
   .text {
     display: flex;
     flex-direction: column;
@@ -134,6 +139,7 @@ export const Experience = styled.div`
       margin-top: 3rem;
       color: #8b008b;
     }
+    
   }
 `;
 

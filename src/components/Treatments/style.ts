@@ -47,4 +47,6 @@ export const StyleDivImages = styled.div`
 
 export const Images = styled.img`
   width: 20rem;
+  border-radius: 10px;
+
 `;

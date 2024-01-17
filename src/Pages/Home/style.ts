@@ -25,3 +25,13 @@ export const StyledImages = styled.div`
   }
 `;
 
+export const StyledImagePerfil = styled.img`
+  width: 40%;
+  height: 30rem;
+  border-radius: 10px;
+`;
+
+export const StyleContainer = styled.div`
+  margin-top: 50px;
+  padding-bottom: 50px;
+`;

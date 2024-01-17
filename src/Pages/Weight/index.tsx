@@ -12,7 +12,7 @@ import {
 } from "../BodyEsthetic/style";
 import { ExperienceTrat } from "../Trataments/style";
 import Button from "../../components/Button";
-import Card from "../../components/CardTest";
+import Card from "../../components/Card";
 import IconExcamation from "../../assets/exclamation";
 
 const Weight = () => {

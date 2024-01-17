@@ -7,7 +7,7 @@ import Button from "../../components/Button";
 import { StyleFlexCards } from "./style";
 import { ExperienceTrat } from "../Trataments/style";
 import ButtonAvaliation from "../../components/ButtonAvaliation";
-import Card from "../../components/CardTest";
+import Card from "../../components/Card";
 import IconCheckSquare from "../../assets/checksquare";
 import Dots from "../../assets/dots";
 import IconExcamation from "../../assets/exclamation";

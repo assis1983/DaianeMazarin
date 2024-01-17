@@ -151,7 +151,7 @@ const About = () => {
       </Information>
       <Container>
         <Experience>
-          <img src={ImagePrime} />
+          <img src={ImagePrime} className="prime"/>
           <div className="text">
             <p className="anos">5 + ANOS DE EXPERIÊNCIA</p>
             <h1>Referência em estética, atendimento e bem estar</h1>
@@ -166,6 +166,7 @@ const About = () => {
               trabalhará empenhada em tornar sua experiência um momento de
               intensa satisfação.
             </p>
+            
           </div>
         </Experience>
       </Container>
