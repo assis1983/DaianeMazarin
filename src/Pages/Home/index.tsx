@@ -5,7 +5,12 @@ import MyFooter from "../../components/Footer";
 import Header from "../../components/Header";
 import Treatments from "../../components/Treatments";
 import { ExperienceTrat } from "../Trataments/style";
-import { StyleContainer, StyleQuestion, StyledImagePerfil, StyledImages } from "./style";
+import {
+  StyleContainer,
+  StyleQuestion,
+  StyledImagePerfil,
+  StyledImages,
+} from "./style";
 import Acne from "../../Image/TRATAMENTO_ACNE.png";
 import Reduction from "../../Image/REDU_O_DE.png";
 import Rejuv from "../../Image/REJUVENESCIMENTO.png";
@@ -19,6 +24,7 @@ function Home() {
   const openWhatsApp = () => {
     window.open("https://api.whatsapp.com/send?phone=5518996832891", "_blank");
   };
+
   return (
     <div>
       <Header />
@@ -30,7 +36,7 @@ function Home() {
             <div className="text">
               <p className="anos">5 + ANOS DE EXPERIÊNCIA</p>
               <h1>Referência em estética, atendimento e bem estar</h1>
-              
+
               <h5>Time de Elite</h5>
               <p className=" satisfaction">
                 Apostamos na escolha, a dedo, do melhor time de profissionais.
@@ -38,11 +44,13 @@ function Home() {
                 trabalhará empenhada em tornar sua experiência um momento de
                 intensa satisfação.
               </p>
-              <Button text={"AGENDAR AVALIAÇÃO"} to={""} onClick={openWhatsApp}/>
+              <Button
+                text={"AGENDAR AVALIAÇÃO"}
+                to={""}
+                onClick={openWhatsApp}
+              />
             </div>
-           
           </Experience>
-          
         </StyleContainer>
       </Container>
       <Treatments />
