@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyleBody = styled.div`
   display: flex;
   background-color: #e6e6fa;
-
+  border-radius: 20px;
   .title {
     text-align: justify;
     margin-left: 60px;
@@ -21,6 +21,7 @@ export const StyleBody = styled.div`
     line-height: 1.5em;
     color: #8b008b;
   }
+  
 `;
 
 export const StyleText = styled.div`
