@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const HeaderContainer = styled.header`
-  color: #a9a9a9;
   padding: 15px 0;
   text-align: center;
   height: 4rem;
@@ -22,8 +21,8 @@ export const Nav = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  color: #a9a9a9;
   text-decoration: none;
+  color: inherit;
   margin: 0 15px;
   font-size: 1rem;
   font-weight: bold;
