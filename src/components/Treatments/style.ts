@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const StyleTreatments = styled.div`
-    text-align: center;
-    font-size: 2.5rem;
-    color: #eb92a3;
-    font-weight: bold;
-    span {
-        &:first-child {
-          color: #8b008b; 
-        }
-    
+  text-align: center;
+  font-size: 2.5rem;
+  color: #eb92a3;
+  font-weight: bold;
+
+  span {
+    &:first-child {
+      color: #8b008b; 
+    }
+  }
 `;
 
 export const Frase = styled.p`
@@ -20,8 +21,8 @@ export const Frase = styled.p`
 
 export const ContainerImages = styled.div`
   display: flex;
-  justify-content: space-around;
-  width: 100%;
+  flex-wrap: wrap; 
+  justify-content: center; 
   max-width: 1300px;
   margin: 0 auto;
   padding: 20px;
@@ -29,24 +30,27 @@ export const ContainerImages = styled.div`
     color: #8b008b;
     margin-top: 20px;
   }
-  p {
-    text-align: justify;
-    color: #8b008b;
-  }
-  .text {
-    max-width: 320px;
-  }
 `;
 
 export const StyleDivImages = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
+  flex-direction: column;
+  flex: 1 1 300px; 
+  margin: 10px; 
+  text-align: justify;
+
+  @media screen and (max-width: 768px) {
+    flex: 1 1 100%;
+  }
 `;
 
 export const Images = styled.img`
-  width: 20rem;
+  width: 100%;
+  max-width: 300px; 
   border-radius: 10px;
 
+  @media screen and (max-width: 768px) {
+    max-width: 100%; 
+  }
 `;

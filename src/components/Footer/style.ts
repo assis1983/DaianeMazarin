@@ -5,70 +5,52 @@ export const Baseboard = styled.div`
   justify-content: space-around;
   height: 15rem;
   background-color: #e6e6fa;
-  .TitleInfo {
-    display: flex;
+  color: #8b008b;
+
+  @media (max-width: 768px) {
     flex-direction: column;
-    color: #8b008b;
-    margin: 0;
-    padding: 0;
-    h1 {
-      font-size: 1.5rem;
-      margin-top: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    align-items: center;
+    height: auto;
   }
 
-  .TitleNav {
-    display: flex;
-    flex-direction: column;
-    color: #8b008b;
-    margin: 0;
-    padding: 0;
-    h1 {
-      font-size: 1.5rem;
-      margin-top: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    p {
-      font-size: 1rem;
-    }
-  }
-
-  .TitleRedes {
-    color: #8b008b;
-
-    h1 {
-      font-size: 1.5rem;
-      margin-top: 10px;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-      margin-right: 20px;
-    }
-  }
-
+  .TitleInfo,
+  .TitleNav,
+  .TitleRedes,
   .address {
     display: flex;
     flex-direction: column;
-    color: #8b008b;
+    margin: 0;
+    padding: 0;
+
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-top: 10px;
-      color: #8b008b;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
   }
+
+  .TitleNav p {
+    font-size: 1rem;
+  }
+
+  .TitleRedes a {
+    margin-right: 20px;
+  }
+
+  .address h1 {
+    color: #8b008b;
+  }
+
   .icon {
     display: flex;
     gap: 10px;
     margin-top: 15px;
   }
+
   .link {
     display: flex;
     gap: 5px;
@@ -76,6 +58,7 @@ export const Baseboard = styled.div`
     color: inherit;
   }
 `;
+
 export const Rede = styled.div`
   display: flex;
   flex-direction: column;
@@ -85,7 +68,6 @@ export const Rede = styled.div`
     margin-top: 20px;
     display: flex;
     algn-items: center;
-
   }
 `;
 
@@ -94,4 +76,10 @@ export const Copyright = styled.div`
   text-align: center;
   background-color: #e6e6fa;
   color: #8b008b;
+
+  @media (max-width: 768px) {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
 `;

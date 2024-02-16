@@ -1,4 +1,4 @@
-import { StyledButtonMenu, StyledDivButton } from "./style";
+import { StyledButtonMenu } from "./style";
 
 const ButtonMenu = () => {
 
@@ -7,9 +7,7 @@ const ButtonMenu = () => {
   };
 
   return (
-    <StyledDivButton>
       <StyledButtonMenu onClick={openWhatsApp}>Agendar Avalliação</StyledButtonMenu>
-    </StyledDivButton>
   );
 };
 

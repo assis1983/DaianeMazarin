@@ -43,16 +43,17 @@ const MyFooter = () => {
         <Rede>
           <div className="TitleRedes">
             <h1>Redes Sociais</h1>
-
-            <a href={linkFace} target="_blank">
-              <IconFace />
-            </a>
-            <a href={linkInstagram} target="_blank">
-              <IconInstagram />
-            </a>
-            <a href={linkWhats} target="_blank">
-              <IconWhats />
-            </a>
+            <div>
+              <a href={linkFace} target="_blank">
+                <IconFace />
+              </a>
+              <a href={linkInstagram} target="_blank">
+                <IconInstagram />
+              </a>
+              <a href={linkWhats} target="_blank">
+                <IconWhats />
+              </a>
+            </div>
           </div>
           <p className="phone">
             <IconPhone />
@@ -61,16 +62,12 @@ const MyFooter = () => {
         </Rede>
 
         <div className="TitleInfo">
-          <h1>
-            Horário de
-            <br />
-            Funcionamento
-          </h1>
+          <h1>Funcionamento</h1>
           <p>Seg - Sex: 08h - 20H</p>
           <p>Sábado: 08h - 12h</p>
         </div>
         <div className="address">
-          <h1>Mapa de Localização</h1>
+          <h1>Localização</h1>
           <a href={openMap} target="_blank" className="link">
             <IconMap />
             <p>Clique Aqui</p>

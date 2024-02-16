@@ -25,19 +25,29 @@ export const TextAre = styled.div`
 
 export const StyleTextAbout = styled.div`
   display: flex;
-  gap: 100px;
+  flex-direction: column;
+  gap: 2%;
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1rem;
   p {
-    color: #8b008b; 
-
+    color: #8b008b;
   }
   span {
     &:first-child {
       color: #eb92a3;
       font-weight: bold;
     }
- 
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    gap: 100px;
+  }
 `;
 
 export const StyleDesck = styled.img`
@@ -106,40 +116,68 @@ export const Experience = styled.div`
   display: flex;
   background-color: #e6e6fa;
   border-radius: 20px;
+
   img {
     border-radius: 20px;
+    max-width: 100%;
+    height: auto;
   }
+
   .text {
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
+    margin-left: 20px;
+
     .anos {
       color: #eb92a3;
       font-size: 1.5rem;
       font-weight: bold;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
+
     h1 {
-      font-size: 3rem;
+      font-size: 1.8rem;
       color: #8b008b;
+      margin-top: 1rem;
     }
 
     .tecn {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #8b008b;
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
+
     .satisfaction {
       font-size: 1rem;
       color: #8b008b;
+      margin-bottom: 8rem;
     }
 
     h5 {
-      font-size: 2rem;
-      margin-top: 3rem;
+      font-size: 1.5rem;
+      margin-top: 2rem;
       color: #8b008b;
     }
-    
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      margin-top: 1rem;
+    }
+
+    .text {
+      margin-left: 0;
+      .anos,
+      h1,
+      .tecn,
+      .satisfaction,
+      h5 {
+        text-align: center;
+      }
+    }
   }
 `;
 

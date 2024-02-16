@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-export const StyledDivButton = styled.div`
-  margin-left: 50px;
-`;
-
 export const StyledButtonMenu = styled.button`
   width: 200px;
   height: 30px;

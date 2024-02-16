@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyleButton = styled.button`
-  width: 200px;
   height: 50px;
   border-radius: 10px;
   border: none;
@@ -10,6 +9,15 @@ export const StyleButton = styled.button`
   transition: transform 0.3s ease;
   color: white;
   &:hover {
-    background-color: #6a006a; 
+    background-color: #6a006a;
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 801px) {
+    width: 250px;
+    height: 60px;
   }
 `;

@@ -72,8 +72,11 @@ const About = () => {
           </p>
           <StyleDesck src={Desck} />
         </StyleTextAbout>
-        <p className="color-agenda">AGENDE JÁ SUA AVALIAÇÃO!</p>
-        <Button text={"AGENDE SUA CONSULTA"} to={""} onClick={openWhatsApp}/>
+        <div>
+          <p className="color-agenda">AGENDE JÁ SUA AVALIAÇÃO!</p>
+          <Button text={"AGENDE SUA CONSULTA"} to={""} onClick={openWhatsApp} />
+        </div>
+
         <Images>
           <Highlight
             src={Sala}
@@ -151,7 +154,7 @@ const About = () => {
       </Information>
       <Container>
         <Experience>
-          <img src={ImagePrime} className="prime"/>
+          <img src={ImagePrime} className="prime" />
           <div className="text">
             <p className="anos">5 + ANOS DE EXPERIÊNCIA</p>
             <h1>Referência em estética, atendimento e bem estar</h1>
@@ -166,7 +169,6 @@ const About = () => {
               trabalhará empenhada em tornar sua experiência um momento de
               intensa satisfação.
             </p>
-            
           </div>
         </Experience>
       </Container>
@@ -196,7 +198,9 @@ const About = () => {
           seus conhecimentos e línguas locais para perseguir uma dívida que já
           não estamos mais recebendo nenhum retorno. "
         </p>
-        <NameClient>Rafael Mazarin Oliveira, Cliente de Emagrecimento</NameClient> 
+        <NameClient>
+          Rafael Mazarin Oliveira, Cliente de Emagrecimento
+        </NameClient>
         <Line />
         <p className="testimony">
           " Ter uma única pessoa como um contato permanente contribui para uma
@@ -205,7 +209,9 @@ const About = () => {
           que têm expertise local e conhecem os procedimentos e regulamentos nos
           países onde trabalham."
         </p>
-        <NameClient>José Henrique Mazarin, Cliente de Estética Facial</NameClient>
+        <NameClient>
+          José Henrique Mazarin, Cliente de Estética Facial
+        </NameClient>
       </Title>
 
       <MyFooter />
