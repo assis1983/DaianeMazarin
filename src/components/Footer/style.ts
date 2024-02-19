@@ -8,6 +8,7 @@ export const Baseboard = styled.div`
   color: #8b008b;
 
   @media (max-width: 768px) {
+    display:flex;
     flex-direction: column;
     align-items: center;
     height: auto;

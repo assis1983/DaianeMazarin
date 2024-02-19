@@ -60,7 +60,15 @@ export const Images = styled.div`
   justify-content: space-between;
   margin-top: 5rem;
   cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 3rem; 
+    gap: 1rem;
+  }
 `;
+
 
 export const Highlight = styled.img`
   object-fit: cover;
@@ -81,16 +89,17 @@ export const EnlargedImage = styled.img`
 
 export const Information = styled.div`
   display: flex;
+  flex-wrap: wrap; 
   justify-content: space-around;
-  height: 550px;
+  min-height: 450px; 
   background-color: #e6e6fa;
+
   .check {
+    width: calc(30% - 20px); 
+    margin: 20px; 
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin-top: 3%;
-    width: 30%;
-    height: 80%;
+    align-items: center;
     background-color: #8b008b;
     border-radius: 20px;
     border: 2px solid transparent;
@@ -99,6 +108,7 @@ export const Information = styled.div`
     &:hover {
       border: 4px solid #eb92a3;
     }
+
     p {
       max-width: 350px;
       color: white;
@@ -106,11 +116,20 @@ export const Information = styled.div`
       margin-top: 40px;
       font-size: 1.1rem;
     }
+
     .Icon {
       margin-top: 30px;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    justify-content: center; 
+    .check {
+      width: calc(100% - 40px); 
+    }
+  }
 `;
+
 
 export const Experience = styled.div`
   display: flex;
@@ -181,29 +200,34 @@ export const Experience = styled.div`
   }
 `;
 
+
 export const Title = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #e6e6fa;
   color: #8b008b;
-  height: 65rem;
+  padding: 20px; 
   margin-bottom: 20px;
+
   h2 {
-    font-size: 187.5%;
-    line-height: 1.25;
-    margin-top: 50px;
+    font-size: 3rem; 
+    margin-top: 2rem; 
+    text-align: center; 
   }
+
   p {
-    max-width: 800px;
-    margin-top: 20px;
+    max-width: 90%; 
+    margin-top: 1rem; 
+    text-align: center;
   }
-  .testimony {
-    font-style: italic;
-    text-align: justify;
-    font-size: 1.2rem;
+
+  @media screen and (max-width: 768px) {
+    height: auto; 
+    padding: 10px; 
   }
 `;
+
 
 export const Line = styled.div`
   width: 100%;
@@ -214,6 +238,11 @@ export const Line = styled.div`
 `;
 
 export const NameClient = styled.div`
-  margin-right: 400px;
+  margin-right: 5vw; 
   color: #333;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+  }
 `;
